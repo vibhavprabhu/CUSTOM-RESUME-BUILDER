@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="resume.css">
+  <script src="html2pdf.bundle.min.js"></script>
+  <script>
+    function generatePDF() {
+      // Choose the element that our invoice is rendered in.
+      const element = document.getElementById('stuff');
+      // Choose the element and save the PDF for our user.
+      html2pdf().from(element).save("{{fname}}");
+    }
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+    <div class="left"></div>
+    <div class="stuff" id="stuff">
+      <br><br>
+      <h1>Resume</h1>
+      <h2>{{resume.name}}</h2>
+      <h2>{{resume.email}}</h2>
+      <h2>{{resume.phone}}</h2>
+      <hr />
+      <br>
+      <p class="head">Description</p>
+      <ul>
+        <li>{{resume.desc}}</li>
+      </ul>
+      <p class="head">Education</p>
+      <ul>
+        <li>{{resume.edu}}</li>
+      </ul>
+      <p class="head">Experience</p>
+      <ul>
+        <li>{{resume.exp}}</li>
+      </ul>
+      <p class="head">Skills</p>
+      <ul>
+        <li>{{resume.skills}}</li>
+      </ul>
+    </div>
+
+    <div class="right"></div>
+  <section style="width:100%;display:flex;align-items:center;justify-content:center">
+    <button onclick="generatePDF()"
+      class="btn4"><a>Save as PDF</a></button></section>
+  <div id="footer"></div>
+</body>
+
+</html>

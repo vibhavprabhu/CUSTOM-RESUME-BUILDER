@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume Builder</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class= "banner" id="1">
+	<div class="wrapper">
+			<nav class="navbar">
+				<img class="logo" src="logo.png">
+				<ul>
+					<li><a class="active">Home</a></li>
+					<li><a href="#2">How It Works</a></li>
+					<li><a href="#3">Get Started</a></li>
+				</ul>
+			</nav>
+			<div class="center">
+			<h1>WE MAKE AMAZING RESUMES</h1>
+			<h2>CREATE ONE FOR FREE NOW!</h2>
+			<div class="buttons">
+			<button class="btn2"><a href="#3">Create Now</a></button>
+		</div>
+		</div>
+	</div>
+	</section>
+		<section class= "about" id="2">
+			<div class="image">
+			<img src="resume.png">
+		</div>
+		<div class="desc" >
+			<h1>HOW IT WORKS?</h1>
+			<p>1. Fill Out The Form</p>
+			<p>2. Download Your Resume</p>
+			<p>3. Isnt That Easy? Try Now!</p>
+			<button class="btn3"><a href="#3">Create Now</a></button>
+		</div>
+		</section>
+		<section class="form" id="3">
+		<div id="main-container">
+			<h1>LETS BUILD YOUR RESUME!</h1>
+			<form id="contact-form" action="/save" method="POST">
+			  <!-- Name Field -->
+			  <label></label>
+			  <input type="text" placeholder="Name" name="name"/>
+
+			    <!-- Email Field -->
+				<input type="text" placeholder="Email" name="email"/>
+
+				 <!-- Phone Field -->
+				 <input type="text" placeholder="Phone Number" name="phone"/>
+
+		
+			  <!-- Desc Field -->
+			  <input type="text" placeholder="Description" name="desc"/>
+
+			  <!-- Education Field -->
+			  <input type="text" placeholder="Education" name="edu"/>
+ 
+			  <!-- Exp Field -->
+			  <input type="text" placeholder="Experience" name="exp"/>
+		
+			  <!-- Skills Field -->
+			  <textarea name="textarea" rows="5" cols="50" placeholder="Skills" name="skills"></textarea>
+
+			  <!-- Submit Button -->
+			  <button class="btn4"><a>Submit</a></button>
+			</form>
+
+		  </div>
+		</section>
+		<section class="footer">
+			<div class="fotdesc"><h1>All Rights Reserved @ResumeBuilder</h1></div>
+		</section>
+</body>
+</html>
